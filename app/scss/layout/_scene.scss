@@ -1,0 +1,12 @@
+.scene {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient($blue, $white, $white);
+}
+
+.dark {
+
+    .scene { 
+        background: url('/images/stars.png');
+    }
+}
