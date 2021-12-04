@@ -1,14 +1,86 @@
 .logo {
+    height: 500px;
     position: relative;
-    top: 20%;
-    left: 25%;
-    background: url('/images/logo-webiti.png');
+    top: 15%;
+    left: 27%;
     z-index: 100;
-    background-size: contain;
-    height: 300px;
-    background-repeat: no-repeat;
+    width: 100%;
 
-        animation: fadeIn 2s;
+      animation: fadeIn 2s;
+      -webkit-animation: fadeIn 2s;
+      -moz-animation: fadeIn 2s;
+      -o-animation: fadeIn 2s;
+      -ms-animation: fadeIn 2s;
+
+      @keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+      }
+      
+      @-moz-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+      }
+      
+      @-webkit-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+      }
+      
+      @-o-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+      }
+      
+      @-ms-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+      }
+
+    span {
+        position: relative;
+        display: flex;
+        font-size: 40px;
+        margin-bottom: 50px;
+        font-family: $font-family-semi-bold;
+    }
+
+    .text1 {
+      width: 100%;
+      right: 400px;
+      top: 50px
+    }
+
+    .text2 {
+      width: 550px;
+      left: 750px;
+      text-align: center;
+      top: 50px;
+    }
+
+    .text3 {
+      right: 310px;
+      top: 50px;
+    }
+
+    .text4 {
+      display: none;
+    }
+
+    .text5 {
+      display: none;
+    }
+
+    .text6 {
+      display: none;
+    }
+}
+
+.dark {
+
+    .logo {
+
+      animation: fadeIn 2s;
         -webkit-animation: fadeIn 2s;
         -moz-animation: fadeIn 2s;
         -o-animation: fadeIn 2s;
@@ -39,28 +111,48 @@
         100% {opacity:1;}
       }
 
-    span {
-        position: relative;
-        display: flex;
-        top: 400px;
-        left: 0px;
-        font-size: 40px;
-        margin-bottom: 50px;
-        font-family: $font-family-medium;
-    }
-
-    .text1 {
-        margin-left: 190px;
-    }
-
-    .text3 {
-        margin-left: 280px;
-    }
-}
-
-.dark {
-
-    .logo {
+      &-img {
         display: none;
+      }
+
+      span {
+        color: white;
+      }
+
+      .text1 {
+        display: none;
+      }
+
+      .text2 {
+        display: none;
+      }
+
+      .text3 {
+        display: none;
+      }
+
+      .text4 {
+        display: flex;
+        width: 550px;
+        top: 300px;
+        right: 450px;
+        text-align: center;
+      }
+
+      .text5 {
+        display: flex;
+        width: 550px;
+        left: 750px;
+        top: 260px;
+        text-align: center;
+      }
+
+      .text6 {
+        display: flex;
+        width: 550px;
+        right: 440px;
+        top: 200px;
+        text-align: center;
+      }
     }
 }
